@@ -5,7 +5,7 @@
 }
 html, body {
     min-height: 100%; 
-    min-width: 100%;
+    background-color: rgb(243, 255, 240);
 }
 
 body {
@@ -13,14 +13,16 @@ body {
     height: 100vh;
     align-items: center;
     margin: auto;
+    padding-left: 10%;
 }
 
 body > :first-child {
-    width: 40%;
-    height: 100%;
+    justify-content: center;
+    width: 30%;
     background-image: url("image/vegetarian.jpg");
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.589);
 }
 
 .title {
@@ -33,38 +35,101 @@ body > :first-child {
     position: absolute;
     top: 20%;
     text-align: center;
-    font-size: 3.35cqw;
-    background-color: rgba(0, 0, 0, 0.548);
+    font-size: 3cqw;
+    background-color: rgba(0, 0, 0, 0.356);
     min-width: 100%;
     padding: 50px 0px 50px 0px;
 }
 
-body :last-child {
-    width: 60%;
-}
-
 section {
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    height: 100%;
 }
 
+body > :last-child {
+    background-color: azure;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.425);
+    row-gap: 5%;
+}
 
-.container {
-    min-width: 100%;
+body > :last-child > form {
     display: flex;
+    height: 40%;
     flex-direction: column;
     justify-content: center;
 }
 
-.container > h2 {
-    font-size: 1.5cqw;
-    padding: 0px 40px 0 40px;
-    text-align: left;
+body > :last-child > div {
+    margin-left: 6%;
+    padding-right: 20%;
 }
 
-form {
+body > :last-child > div > h2 {
+    font-size: 1.3cqw;
+}
+
+body > :last-child > form > div:first-of-type {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.342);
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+}
+
+body > :last-child > form > div > fieldset {
+    padding: 20px 0px 20px 0px;
+    padding-left: 6%;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+    height: 70%;
+    align-content: center; 
+}
+
+fieldset > legend {
+    position: relative;
+    font-size: 1.3cqw;
+    padding-bottom: 40px;
+}
+
+fieldset > .input-field {
+    color: rgb(134, 122, 122);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field > label {
+    font-size: 0.8cqw;
+    margin: 1%;
+}
+.input-field > input {
+    border-radius: 5px;
+    width: 80%;
+    height: 25px;
+}
+
+form > div:last-of-type {
+    padding-top: 60px;
+    margin-left: 6%;
+}
+
+form > div:last-of-type > button {
+    font-size: 1.3em;
+    padding: 20px 100px 20px 100px;
+    border-radius: 8px;
+    background-color:darkred;
+    color: azure;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+section > h3 {
+    padding-top: 30px;
+    margin-left: 6%;
 }
